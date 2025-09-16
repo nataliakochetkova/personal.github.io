@@ -80,9 +80,8 @@
             </div>
             <div class="hero-main-content-v2">
                 <p class="hero-subtitle-v2">Помогаю бизнесу расти системно и обеспечивать его устойчивое развитие.</p>
-                <!-- ИЗМЕНЕНИЕ 1: Обновлен оффер в главном блоке -->
-                <p class="hero-offer-v2">Пройдите экспресс-диагностику в Telegram-боте и узнайте, нужен ли вашему бизнесу трекер.</p>
-                <a href="https://t.me/BusinessDiagBot" target="_blank" class="cta-button hero-cta-v2">Узнать за 10 минут <i class="fi fi-rr-arrow-right"></i></a>
+                <p class="hero-offer-v2">Узнайте, как трекинг может ускорить рост вашего бизнеса на диагностической сессии.</p>
+                <a href="#diagnostic-session" class="cta-button hero-cta-v2">Записаться на сессию <i class="fi fi-rr-arrow-right"></i></a>
             </div>
         </div>
     </section>
@@ -260,12 +259,11 @@
             <p class="section-marker">• ПРОЦЕСС</p>
             <h2 class="section-title-v2"><span>Этапы</span> нашего сотрудничества</h2>
             <ul class="tasks-list-v2">
-                <!-- ИЗМЕНЕНИЕ 2: Обновлен первый шаг процесса -->
                 <li class="task-list-item-v2">
                     <span class="task-number">01</span>
                     <div class="task-content">
-                        <h3>Экспресс-диагностика в боте</h3>
-                        <p>За 10 минут определите ключевые проблемы вашего бизнеса и получите персональные рекомендации.</p>
+                        <h3>Диагностическая сессия</h3>
+                        <p>Вводная встреча, где мы знакомимся, разбираем ваш запрос и определяем цели работы.</p>
                     </div>
                     <i class="fi fi-rr-arrow-small-right task-arrow"></i>
                 </li>
@@ -297,14 +295,23 @@
             <p class="process-result-v2">Результат: Полное осознание ситуации, причин проблем и новых возможностей.</p>
         </div>
     </section>
+    
+    <!-- Новый блок для Telegram-бота -->
+    <section id="bot-promo" class="bot-promo-section">
+        <div class="container bot-promo-container">
+            <h3>Не уверены, что готовы к сессии?</h3>
+            <p>Пройдите быструю самодиагностику в моем Telegram-боте и получите моментальную оценку узких мест вашего бизнеса.</p>
+            <a href="https://t.me/BusinessDiagBot" target="_blank" class="cta-button">Узнать за 10 минут <i class="fi fi-rr-arrow-right"></i></a>
+        </div>
+    </section>
+    <!-- Конец нового блока -->
 
-    <!-- ИЗМЕНЕНИЕ 3: Полностью обновлен финальный блок призыва к действию -->
     <section id="diagnostic-session" class="diagnostic-section-v2 dark-section">
         <div class="container diagnostic-container-v2-content">
             <p class="section-marker light-marker">• ВАШ СЛЕДУЮЩИЙ ШАГ</p>
-            <h2 class="section-title-v2 light-text"><span>Узнайте, нужен ли вам</span> бизнес-трекер!</h2>
-            <p class="diagnostic-description-v2">Не уверены, с чего начать? Пройдите бесплатную диагностику в моем Telegram-боте. Всего за 10 минут вы получите объективную оценку ситуации в вашем бизнесе и поймете, какие шаги предпринять для роста.</p>
-            <a href="https://t.me/BusinessDiagBot" target="_blank" class="cta-button diagnostic-cta-v2">Запустить бота-диагноста <i class="fi fi-rr-arrow-right"></i></a>
+            <h2 class="section-title-v2 light-text"><span>Запишитесь на</span> диагностическую сессию</h2>
+            <p class="diagnostic-description-v2">На 30-минутной онлайн-встрече мы разберем текущую ситуацию в вашем бизнесе, определим ключевые точки роста и поймем, смогу ли я быть вам полезна. Это вас ни к чему не обязывает.</p>
+            <a href="https://t.me/natalia_koch" target="_blank" class="cta-button diagnostic-cta-v2">Записаться в Telegram <i class="fi fi-rr-arrow-right"></i></a>
         </div>
     </section>
 
@@ -1023,6 +1030,25 @@ img { max-width: 100%; height: auto; display: block; }
 }
 .footer-social-v2 a:hover { color: var(--text-light); }
 
+/* Стили для нового промо-блока с ботом */
+.bot-promo-section {
+    padding: calc(var(--section-padding-y) / 1.5) 0;
+    background-color: var(--medium-light-bg);
+    text-align: center;
+}
+.bot-promo-container h3 {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-weight: 600;
+    margin-bottom: var(--spacing-unit);
+    color: var(--text-dark);
+}
+.bot-promo-container p {
+    max-width: 600px;
+    margin: 0 auto calc(var(--spacing-unit) * 1.5) auto;
+    color: var(--text-medium);
+    font-size: 1.05rem;
+}
+
 @media (min-width: 768px) {
     .menu-toggle {
         display: none;
@@ -1205,7 +1231,7 @@ document.addEventListener('DOMContentLoaded', function() {
         yearSpan.textContent = new Date().getFullYear();
     }
 
-    var animatedElements = document.querySelectorAll('.tasks-section-v2, .tracking-info-section-v2, .expertise-section-v2, .results-section-v2, .beyond-business-section-v2, .how-it-works-section-v2, .testimonials-section-v2, .diagnostic-section-v2, .contact-section-v2, .hero-main-content-v2, .hero-image-placeholder-v2');
+    var animatedElements = document.querySelectorAll('.tasks-section-v2, .tracking-info-section-v2, .expertise-section-v2, .results-section-v2, .beyond-business-section-v2, .how-it-works-section-v2, .testimonials-section-v2, .diagnostic-section-v2, .contact-section-v2, .hero-main-content-v2, .hero-image-placeholder-v2, .bot-promo-section');
 
     var observerOptions = {
         root: null,
